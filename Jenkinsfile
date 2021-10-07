@@ -1,7 +1,7 @@
 pipeline {
     agent {
         any {
-            image 'node:current-buster' 
+            image 'node:16.10.0' 
             args '-p 3000:3000' 
         }
     }
@@ -10,7 +10,6 @@ pipeline {
             steps {
                 sh 'node --version'
                 sh 'npm install' 
-                sh 'npm run build'
             }
         }
     }
