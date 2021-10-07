@@ -1,7 +1,7 @@
 pipeline {
     agent {
         any {
-            image 'node:current-buster-slim' 
+            image 'node:current-buster' 
             args '-p 3000:3000' 
         }
     }
